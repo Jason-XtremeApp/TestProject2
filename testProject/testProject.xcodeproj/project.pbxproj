@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		714DE5521C994850004DA887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 714DE5511C994850004DA887 /* main.m */; };
 		714DE5551C994850004DA887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 714DE5541C994850004DA887 /* AppDelegate.m */; };
-		714DE5581C994850004DA887 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 714DE5571C994850004DA887 /* ViewController.m */; };
+		714DE5581C994850004DA887 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 714DE5571C994850004DA887 /* ViewController.mm */; };
 		714DE55B1C994851004DA887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714DE5591C994851004DA887 /* Main.storyboard */; };
 		714DE55D1C994851004DA887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714DE55C1C994851004DA887 /* Assets.xcassets */; };
 		714DE5601C994851004DA887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 714DE55E1C994851004DA887 /* LaunchScreen.storyboard */; };
 		714DE56B1C994851004DA887 /* testProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 714DE56A1C994851004DA887 /* testProjectTests.m */; };
 		714DE5761C994851004DA887 /* testProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 714DE5751C994851004DA887 /* testProjectUITests.m */; };
+		714DE5871C994BF7004DA887 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 714DE5861C994BF7004DA887 /* test.JPG */; };
+		714DE5891C994CFF004DA887 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714DE5881C994CFE004DA887 /* AVFoundation.framework */; };
+		714DE58B1C994D0A004DA887 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714DE58A1C994D0A004DA887 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +43,7 @@
 		714DE5531C994850004DA887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		714DE5541C994850004DA887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		714DE5561C994850004DA887 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		714DE5571C994850004DA887 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		714DE5571C994850004DA887 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		714DE55A1C994851004DA887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		714DE55C1C994851004DA887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		714DE55F1C994851004DA887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		714DE5711C994851004DA887 /* testProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		714DE5751C994851004DA887 /* testProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testProjectUITests.m; sourceTree = "<group>"; };
 		714DE5771C994851004DA887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714DE5861C994BF7004DA887 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
+		714DE5881C994CFE004DA887 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		714DE58A1C994D0A004DA887 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714DE58B1C994D0A004DA887 /* CoreImage.framework in Frameworks */,
+				714DE5891C994CFF004DA887 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +109,13 @@
 		714DE54F1C994850004DA887 /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				714DE58A1C994D0A004DA887 /* CoreImage.framework */,
+				714DE5881C994CFE004DA887 /* AVFoundation.framework */,
+				714DE5851C994BDD004DA887 /* debug */,
 				714DE5531C994850004DA887 /* AppDelegate.h */,
 				714DE5541C994850004DA887 /* AppDelegate.m */,
 				714DE5561C994850004DA887 /* ViewController.h */,
-				714DE5571C994850004DA887 /* ViewController.m */,
+				714DE5571C994850004DA887 /* ViewController.mm */,
 				714DE5591C994851004DA887 /* Main.storyboard */,
 				714DE55C1C994851004DA887 /* Assets.xcassets */,
 				714DE55E1C994851004DA887 /* LaunchScreen.storyboard */,
@@ -138,6 +149,14 @@
 				714DE5771C994851004DA887 /* Info.plist */,
 			);
 			path = testProjectUITests;
+			sourceTree = "<group>";
+		};
+		714DE5851C994BDD004DA887 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				714DE5861C994BF7004DA887 /* test.JPG */,
+			);
+			name = debug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +265,7 @@
 				714DE5601C994851004DA887 /* LaunchScreen.storyboard in Resources */,
 				714DE55D1C994851004DA887 /* Assets.xcassets in Resources */,
 				714DE55B1C994851004DA887 /* Main.storyboard in Resources */,
+				714DE5871C994BF7004DA887 /* test.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				714DE5581C994850004DA887 /* ViewController.m in Sources */,
+				714DE5581C994850004DA887 /* ViewController.mm in Sources */,
 				714DE5551C994850004DA887 /* AppDelegate.m in Sources */,
 				714DE5521C994850004DA887 /* main.m in Sources */,
 			);
@@ -411,7 +431,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testProject/Framework",
+				);
 				INFOPLIST_FILE = testProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XtremeApp.com.testProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,7 +447,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/testProject/Framework",
+				);
 				INFOPLIST_FILE = testProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = XtremeApp.com.testProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +526,7 @@
 				714DE57C1C994851004DA887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		714DE57D1C994851004DA887 /* Build configuration list for PBXNativeTarget "testProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +535,7 @@
 				714DE57F1C994851004DA887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		714DE5801C994851004DA887 /* Build configuration list for PBXNativeTarget "testProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +544,7 @@
 				714DE5821C994851004DA887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
