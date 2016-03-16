@@ -18,6 +18,7 @@
 		714DE5871C994BF7004DA887 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 714DE5861C994BF7004DA887 /* test.JPG */; };
 		714DE5891C994CFF004DA887 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714DE5881C994CFE004DA887 /* AVFoundation.framework */; };
 		714DE58B1C994D0A004DA887 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714DE58A1C994D0A004DA887 /* CoreImage.framework */; };
+		714DE5911C995669004DA887 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714DE5901C995669004DA887 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		714DE5861C994BF7004DA887 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
 		714DE5881C994CFE004DA887 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		714DE58A1C994D0A004DA887 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		714DE5901C995669004DA887 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = testProject/framework/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714DE5911C995669004DA887 /* opencv2.framework in Frameworks */,
 				714DE58B1C994D0A004DA887 /* CoreImage.framework in Frameworks */,
 				714DE5891C994CFF004DA887 /* AVFoundation.framework in Frameworks */,
 			);
@@ -89,6 +92,7 @@
 		714DE5441C994850004DA887 = {
 			isa = PBXGroup;
 			children = (
+				714DE5901C995669004DA887 /* opencv2.framework */,
 				714DE54F1C994850004DA887 /* testProject */,
 				714DE5691C994851004DA887 /* testProjectTests */,
 				714DE5741C994851004DA887 /* testProjectUITests */,
@@ -434,6 +438,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testProject/Framework",
+					"$(PROJECT_DIR)/testProject/framework",
 				);
 				INFOPLIST_FILE = testProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
@@ -450,6 +455,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/testProject/Framework",
+					"$(PROJECT_DIR)/testProject/framework",
 				);
 				INFOPLIST_FILE = testProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
